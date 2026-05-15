@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    background:#0b1023;
+    padding:20px;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#00ffff;
+}
+.logo span{
+    font-size: 18px;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px;
+}
+
+.hero-text h1{
+    font-size:80px;
+    color:#00ffff;
+}
+
+.hero-text h3{
+    margin-top:10px;
+    color:#ffcc00;
+}
+
+.hero-text p{
+    margin-top:20px;
+    width:500px;
+    line-height:1.6;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#00ffff;
+    color:black;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+/* ABOUT */
+
+.about,
+.skills,
+.projects,
+.contact{
+    padding:100px;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2{
+    margin-bottom:30px;
+    color:#00ffff;
+}
+
+/* SKILLS */
+
+.skill-box{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    padding:20px;
+    background:#11182f;
+    border:1px solid #00ffff;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* PROJECTS */
+
+.project-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:300px;
+    padding:20px;
+    background:#11182f;
+    border:1px solid #00ffff;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .hero{
+        padding:30px;
+    }
+
+    .hero-text h1{
+        font-size:50px;
+    }
+
+    .hero-text p{
+        width:100%;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        padding:50px 30px;
+    }
+
+}
+
+.contact p {
+    margin-top: 10px;
+}
